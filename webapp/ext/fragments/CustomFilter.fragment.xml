@@ -1,0 +1,13 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:smartfilterbar="sap.ui.comp.smartfilterbar" xmlns:core="sap.ui.core">
+<smartfilterbar:ControlConfiguration groupId="_BASIC" 
+    key="CustomFilter"
+    label="CustomFilter1"
+    visibleInAdvancedArea="true">
+    <smartfilterbar:customControl>
+        <ComboBox id="FilterId" items="{/expensesSet}">
+        <core:Item key="{Empid}" text="{Empid}"/>
+        
+    </ComboBox>
+    </smartfilterbar:customControl>
+</smartfilterbar:ControlConfiguration>
+</core:FragmentDefinition>
